@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <title>貓咪餵食器</title>
+        <link rel = "stylesheet" href = "styles.css">
+        <script src = "feedcat.js"></script>
+    </head>
+    <body>
+        <div id = "left-block">
+            <h2>Feed Me</h2>
+
+            <h4>Choose one or all cats to feed.</h4>
+
+            <input type = "radio" class = "btn" id = "Gracyn" value ="0" >Gracyn<br>
+            <input type = "radio" class = "btn" id = "Pearl" value = "0" >Pearl<br>
+            <input type = "radio" class = "btn" id = "Riggin" value = "0" >Riggin<br>
+            <input type = "radio" class = "btn" id = "Hunter" value = "0" >Hunter<br>
+            <input type = "radio" class = "btn" id = "Gary" value = "0" >Gary<br>
+
+            <h4>Sepcific Breed?</h4>
+            <input type = "text" id = "text"><br><br><br><br>
+
+            <button type = "button" id = "submit" onclick = print()>Submit</button>
+        </div>
+
+        <div id = "right-block">
+            <h3 id = "catAlbum">Cat Album</h3>
+            <div class = "picContainer">
+                    <img src = "catNormal/cat1.jpg" class = "catPic" id = "catPic1"  onmousedown = mouseDown1() onmouseup = mouseUp1()>
+                    <img src = "feeded.png" class = "feeded" id = "feeded1">
+                    <p class = "name" style = "width : 40% ">Gracyn</p>
+                    <p class = "breed" style = "width : 40% ">ragdoll</p>
+            </div>
+            <div class = "picContainer">
+                    <img src = "catNormal/cat2.jpg" class = "catPic" id = "catPic2"  onmousedown = mouseDown2() onmouseup = mouseUp2()>
+                    <img src = "feeded.png" class = "feeded" id = "feeded2">
+                    <p class = "name" style = "width : 40% ">Pearl</p>
+                    <p class = "breed" style = "width : 40% ">ragdoll</p>
+            </div>
+            <div class = "picContainer">
+                    <img src = "catNormal/cat3.jpg" class = "catPic" id = "catPic3"  onmousedown = mouseDown3() onmouseup = mouseUp3()>
+                    <img src = "feeded.png" class = "feeded" id = "feeded3">
+                    <p class = "name" style = "width :  40%">Riggin</p>
+                    <p class = "breed" style = "width : 40% ">ring</p>
+            </div>
+            <div class = "picContainer">
+                    <img src = "catNormal/cat4.jpg" class = "catPic" id = "catPic4"  onmousedown = mouseDown4() onmouseup = mouseUp4()>
+                    <img src = "feeded.png" class = "feeded" id = "feeded4">
+                    <p class = "name" style = "width : 40%">Hunter</p>
+                    <p class = "breed" style = "width : 40% ">tardar</p>
+            </div>
+            <div class = "picContainer">
+                    <img src = "catNormal/cat5.jpg" class = "catPic" id = "catPic5"  onmousedown = mouseDown5() onmouseup = mouseUp5()>
+                    <img src = "feeded.png" class = "feeded" id = "feeded5">
+                    <p class = "name" style = "width : 40% ">Gary</p>
+                    <p class = "breed" style = "width : 40% ">ragdoll</p>
+            </div>
+        </div>
+        <p id = "demo"></p>
+
+
+    </body>
+</html>
