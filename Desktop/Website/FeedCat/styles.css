@@ -1,0 +1,103 @@
+body{
+    height : 100vh;
+    width: 100vw;
+    margin: 0 0 0 0;
+
+
+    /* display : grid;
+    grid-template-columns: repeat(200, 1fr);
+    grid-template-rows: repeat(100, 1fr); */
+    display : flex; 
+}
+
+#left-block{
+    background-color: rgba(45,98,32,0.5);
+    border : rgba(45,98,32,0.5);
+    border-radius: 15px ;
+    margin: 5px;
+    padding : 10vh 10vw;
+
+}
+
+#right-block{
+    background: rgba(123,123,256,0.8);
+    border: rgba(123,123,256,0.8);
+    border-radius: 15px;
+    margin : 5px;
+    /* padding : 40vh 29vw; */
+    
+    display : flex;
+    flex-wrap: wrap; 
+    justify-content: space-around;
+    
+}
+
+h1{
+    color: blue;
+}
+
+#catAlbum{
+    background : gray;
+    border : solid gray;
+    border-radius: 5px;
+    margin: 1px;
+    width : 97%;
+    height : 5%;
+    display : flex; 
+    flex-wrap : wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.picContainer{
+    border : solid green;
+    margin : 30px;
+    width : 20%;
+    height : 30%;
+}
+
+.name{
+
+    border : 1px solid pink; 
+    border-radius: 5px;
+    margin : 1px;
+    background : pink;
+    justify-content: center;
+    align-items: center;
+}
+
+.breed{
+    border : 1px solid yellow;
+    position : inherit;
+    border-radius: 5px;
+    margin : 1px;
+    justify-content: center;
+    background : yellow;
+    align-items: center;
+}
+
+.catPic{
+    position : relative;
+    width : 100%;
+    height: 80%;
+}
+
+
+.feeded{
+    display: none;
+    position : absolute;
+    top : 15vh;
+
+}
+
+#feeded5{
+    display : none;
+    position : absolute;
+    top :55vh;
+}
+
+#feeded4{
+    display : none;
+    position : absolute;
+    top :55vh;
+}
